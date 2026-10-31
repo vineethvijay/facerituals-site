@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FaceRituals by Aamy | Natural PMU &amp; Skin Studio in Huizen</title>
+<meta name="description" content="Natural-results permanent makeup and skin studio in Huizen, Het Gooi. Open early mornings, evenings and weekends.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#3b2a35;--muted:#7a6670;--blush:#f6c9d0;--peach:#fbd9c4;--lav:#d9cdf3;--champ:#f3e6cf;--rose:#c9798a;--plum:#8e5a7a;
+  --glass:rgba(255,255,255,.45);--border:rgba(255,255,255,.7);
+  --grad:linear-gradient(135deg,#f9d3da 0%,#fbe0cc 35%,#efe2f7 70%,#dcd2f5 100%);
+  --accent:linear-gradient(120deg,#c9798a,#b07bb0 55%,#8e7cc3);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:clip;max-width:100%}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fdf8f6;line-height:1.65;font-weight:400;overflow-x:hidden}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.1}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:110px 0;position:relative}
+.eyebrow{font-size:.75rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);font-weight:600;margin-bottom:14px;display:block}
+.h2{font-size:clamp(2.2rem,4.5vw,3.4rem);margin-bottom:18px}
+.h2 em{font-style:italic;background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);max-width:560px;font-size:1.05rem}
+.center{text-align:center}.center .lead{margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:999px;font-weight:500;font-size:.95rem;transition:.35s;cursor:pointer;border:0}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 12px 30px -10px rgba(176,123,176,.7)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(176,123,176,.9)}
+.btn-ghost{background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(12px)}
+.btn-ghost:hover{background:rgba(255,255,255,.75)}
+.glass{background:var(--glass);border:1px solid var(--border);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:28px;box-shadow:0 20px 50px -25px rgba(142,90,122,.35)}
+/* nav */
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:min(1180px,calc(100% - 32px));z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 14px 12px 26px;border-radius:999px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:600}
+.logo span{font-style:italic;font-weight:400;color:var(--rose)}
+.links{display:flex;gap:30px;font-size:.9rem;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+nav .btn{padding:11px 22px}
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--grad);overflow:hidden;padding:150px 0 100px}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.75;animation:float 14s ease-in-out infinite}
+.b1{width:520px;height:520px;background:#f7b9c6;top:-120px;right:-80px}
+.b2{width:420px;height:420px;background:#cbbcf2;bottom:-140px;left:-100px;animation-delay:-5s}
+.b3{width:300px;height:300px;background:#fcd1b0;top:40%;left:45%;animation-delay:-9s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-40px) scale(1.08)}}
+.hero-grid{width:100%;position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(3rem,7vw,5.8rem);letter-spacing:-.01em}
+.hero h1 em{font-style:italic;background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nl{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.3rem;color:var(--plum);margin:18px 0 8px}
+.hero p.lead{margin-bottom:34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chip{font-size:.8rem;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.5);border:1px solid var(--border)}
+.hero-card{padding:34px;position:relative;width:100%}
+.float-card{white-space:nowrap}
+.orb{width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff 0%,#fbe0d6 25%,#f2b8c6 55%,#b9a3e6 100%);box-shadow:inset -20px -30px 60px rgba(142,90,122,.25),0 30px 60px -20px rgba(142,90,122,.4);animation:spin 20s linear infinite;position:relative}
+.orb::after{content:"";position:absolute;inset:18%;border-radius:50%;border:1px solid rgba(255,255,255,.7)}
+@keyframes spin{to{filter:hue-rotate(25deg)}}
+.float-card{position:absolute;padding:16px 20px;font-size:.85rem;border-radius:20px}
+.float-card strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.35rem}
+.fc1{left:-30px;bottom:40px}.fc2{right:-20px;top:30px}
+/* services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.service{padding:34px;transition:.4s;position:relative;overflow:hidden}
+.service:hover{transform:translateY(-6px)}
+.service .ico{width:54px;height:54px;border-radius:18px;background:var(--grad);display:grid;place-items:center;margin-bottom:22px;font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-style:italic;color:var(--plum);border:1px solid #fff}
+.service h3{font-size:1.75rem;margin-bottom:10px}
+.service p{color:var(--muted);font-size:.95rem}
+.price{margin-top:22px;display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(201,121,138,.2);padding-top:16px;font-size:.85rem;color:var(--muted)}
+.price b{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--ink);font-weight:600}
+.tag{position:absolute;top:22px;right:22px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:999px;background:var(--accent);color:#fff}
+.services-bg{background:linear-gradient(180deg,#fdf8f6,#fbeff0 50%,#f6f1fb)}
+.note{font-size:.8rem;color:var(--muted);margin-top:26px;text-align:center}
+/* why */
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.why-list{display:grid;gap:18px}
+.why-item{padding:26px 28px;display:flex;gap:20px;align-items:flex-start}
+.num{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-style:italic;background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.why-item h3{font-size:1.45rem;margin-bottom:4px}
+.why-item p{color:var(--muted);font-size:.93rem}
+/* gallery */
+.gallery-bg{background:var(--grad)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px}
+.shot{aspect-ratio:4/5;border-radius:24px;position:relative;overflow:hidden;border:1px solid var(--border)}
+.shot:nth-child(1){background:linear-gradient(160deg,#f8d7dd,#e8c1d6)}
+.shot:nth-child(2){background:linear-gradient(160deg,#fde3d2,#f3c4b8);transform:translateY(30px)}
+.shot:nth-child(3){background:linear-gradient(160deg,#e9e0f8,#cdbdf0)}
+.shot:nth-child(4){background:linear-gradient(160deg,#f6ead6,#ecd0c8);transform:translateY(30px)}
+.shot::before{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.35);top:18%;left:15%;filter:blur(2px)}
+.shot span{position:absolute;bottom:14px;left:14px;right:14px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.6);backdrop-filter:blur(10px);font-size:.78rem}
+.shot span b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.1rem}
+/* about */
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:200px 200px 32px 32px;background:linear-gradient(170deg,#fbe0cc,#f2b8c6 50%,#b9a3e6);position:relative;overflow:hidden;box-shadow:0 30px 60px -25px rgba(142,90,122,.5)}
+.portrait::before{content:"";position:absolute;width:44%;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.45);top:20%;left:28%}
+.portrait::after{content:"";position:absolute;width:80%;height:45%;border-radius:50% 50% 0 0;background:rgba(255,255,255,.35);bottom:0;left:10%}
+.sig{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:2rem;color:var(--rose);margin-top:20px}
+.creds{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+/* hours */
+.hours-bg{background:linear-gradient(180deg,#f6f1fb,#fdf8f6)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.hours-card{padding:40px}
+.row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dashed rgba(201,121,138,.3);font-size:.98rem}
+.row:last-child{border:0}.row b{font-weight:500}
+.hours-card h3{font-size:1.9rem;margin-bottom:12px}
+.hours-card.hl{background:var(--accent);color:#fff;border:0}
+.hours-card.hl p{opacity:.9;margin-bottom:26px}
+.hours-card.hl .btn{background:#fff;color:var(--plum)}
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.review{padding:32px}
+.stars{color:var(--rose);letter-spacing:4px;margin-bottom:14px}
+.review p{font-family:"Cormorant Garamond",serif;font-size:1.3rem;font-style:italic;line-height:1.4}
+.review small{display:block;margin-top:18px;color:var(--muted);font-size:.82rem}
+/* faq */
+.faq{max-width:800px;margin:50px auto 0;display:grid;gap:14px}
+details{padding:22px 28px;border-radius:22px;cursor:pointer}
+summary{list-style:none;font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:500;display:flex;justify-content:space-between;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:Inter;font-weight:300;font-size:1.5rem;color:var(--rose);transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;font-size:.95rem}
+/* contact */
+.contact-bg{background:var(--grad);overflow:hidden}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:56px;align-items:center;position:relative}
+.map{aspect-ratio:4/3;border-radius:24px;background:radial-gradient(circle at 55% 45%,#fff 0 6px,var(--rose) 7px 13px,transparent 14px),repeating-linear-gradient(45deg,rgba(255,255,255,.35) 0 2px,transparent 2px 40px),repeating-linear-gradient(-45deg,rgba(255,255,255,.35) 0 2px,transparent 2px 60px),linear-gradient(135deg,#efe2f7,#fbe0cc);border:1px solid var(--border);position:relative}
+.map span{position:absolute;bottom:16px;left:16px;padding:8px 14px;border-radius:12px;background:rgba(255,255,255,.7);font-size:.8rem}
+.contact ul{list-style:none;margin:24px 0 30px;display:grid;gap:10px;color:var(--muted)}
+.contact ul b{color:var(--ink);font-weight:500;display:inline-block;width:110px}
+footer{background:#2f2229;color:#e9dce2;padding:60px 0 30px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .logo span{color:#f2b8c6}
+footer p,footer a{font-size:.88rem;color:#bfaab4}
+.foot-links{display:flex;gap:26px}
+.copy{padding-top:24px;font-size:.78rem;color:#9a8590;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+/* responsive */
+@media(max-width:960px){
+  .links{display:none}
+  .hero-grid,.why-grid,.about-grid,.contact,.hours-grid{grid-template-columns:1fr}
+  .grid3,.reviews{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .hero-card{max-width:420px;margin:0 auto}
+}
+@media(max-width:600px){
+  section{padding:80px 0}
+  .wrap{padding:0 20px}
+  .grid3,.reviews{grid-template-columns:1fr}
+  .hero{padding:130px 0 80px}
+  .hero-card{max-width:320px;margin-top:10px}
+  .float-card{padding:12px 16px;font-size:.78rem}.float-card strong{font-size:1.15rem}
+  .fc1{left:-10px;bottom:10px}.fc2{right:-10px;top:0}
+  .contact{padding:30px 22px}
+  .hours-card{padding:28px}
+  nav{padding:10px 10px 10px 20px}.logo{font-size:1.25rem}nav .btn{padding:10px 18px;font-size:.85rem}
+  .shot:nth-child(2),.shot:nth-child(4){transform:translateY(20px)}
+  .contact ul b{width:90px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="glass">
+  <a href="#" class="logo">FaceRituals <span>by Aamy</span></a>
+  <div class="links"><a href="#services">Treatments</a><a href="#results">Results</a><a href="#about">About</a><a href="#hours">Hours</a><a href="#faq">FAQ</a></div>
+  <a href="#book" class="btn btn-primary">Book now</a>
+</nav>
+
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">PMU &amp; Skin Studio · Huizen, Het Gooi</span>
+      <h1>Wake up <em>effortlessly</em> you.</h1>
+      <p class="nl">Natuurlijk mooi, elke dag.</p>
+      <p class="lead">Soft, natural permanent makeup and results-driven skin rituals for busy Gooi women. Booked around your life, with early mornings, evenings and weekends.</p>
+      <div class="cta"><a href="#book" class="btn btn-primary">Book your ritual &rarr;</a><a href="#consult" class="btn btn-ghost">Free 15-min consult</a></div>
+      <div class="chips"><span class="chip">✦ Certified PMU artist</span><span class="chip">✦ Healed-result portfolio</span><span class="chip">✦ Open 07:00 &amp; until 21:00</span></div>
+    </div>
+    <div class="hero-card reveal">
+      <div class="orb"></div>
+      <div class="float-card glass fc1"><strong>Soft Ritual Brows</strong>Healed, never harsh</div>
+      <div class="float-card glass fc2"><strong>07:00 to 21:00</strong>Before or after work</div>
+    </div>
+  </div>
+</header>
+
+<section id="services" class="services-bg">
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">Treatments</span><h2 class="h2">Rituals for <em>brows, lips</em> &amp; skin</h2><p class="lead">A focused menu, done beautifully. Every treatment starts with listening to what you want.</p></div>
+    <div class="grid3">
+      <div class="service glass reveal"><span class="tag">Signature</span><div class="ico">B</div><h3>Soft Ritual Brows</h3><p>Powder or combo brows, mapped to your face and tailored to your natural shape. Soft, fluffy and believable.</p><div class="price">Incl. 6-week touch-up<b>€ 329*</b></div></div>
+      <div class="service glass reveal"><span class="tag">Trending</span><div class="ico">L</div><h3>Watercolor Lip Blush</h3><p>A sheer wash of colour that restores definition and warmth to your lips. Like a tinted balm that stays.</p><div class="price">Incl. 6-week touch-up<b>€ 349*</b></div></div>
+      <div class="service glass reveal"><div class="ico">T</div><h3>Touch-ups</h3><p>Colour refresh for healed PMU, ours or another artist's (after assessment). Keep your look crisp year after year.</p><div class="price">From<b>€ 149*</b></div></div>
+      <div class="service glass reveal"><div class="ico">F</div><h3>FaceRitual Facial</h3><p>Starts with a skin analysis, then a deep cleanse, steam, extraction and mask chosen for your skin that day.</p><div class="price">60 minutes<b>€ 79*</b></div></div>
+      <div class="service glass reveal"><div class="ico">W</div><h3>Waxing</h3><p>Brows, lip and face, plus body waxing. Quick, gentle and perfect for a 30-minute evening slot.</p><div class="price">From<b>€ 15*</b></div></div>
+      <div class="service glass reveal" id="consult"><span class="tag">Free</span><div class="ico">C</div><h3>15-min Consult</h3><p>Not sure yet? Meet in the studio or on video, talk shape and colour, and ask anything. No pressure, no fee.</p><div class="price">Always<b>€ 0</b></div></div>
+    </div>
+    <p class="note">* Placeholder prices, to be confirmed.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap why-grid">
+    <div class="reveal"><span class="eyebrow">Why FaceRituals</span><h2 class="h2">Natural results, <em>on your schedule</em></h2><p class="lead">A private home studio in Huizen, built for women who want to look like themselves, just a little more rested.</p></div>
+    <div class="why-list">
+      <div class="why-item glass reveal"><span class="num">01</span><div><h3>Healed results, shown honestly</h3><p>Every portfolio photo is taken 6 weeks after treatment, in daylight. What you see is what you live with.</p></div></div>
+      <div class="why-item glass reveal"><span class="num">02</span><div><h3>The natural look, always</h3><p>Soft techniques and skin-matched pigments. Nobody should guess, they should just notice you look great.</p></div></div>
+      <div class="why-item glass reveal"><span class="num">03</span><div><h3>Hours that fit real life</h3><p>Weekdays from 07:00 and until 21:00, plus weekends. Book online 24/7, no phone tag.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="gallery-bg">
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">Healed Results</span><h2 class="h2">Six weeks later, <em>still soft</em></h2><p class="lead">Our healed gallery is growing. Follow along on Instagram for new results every week.</p></div>
+    <div class="gallery reveal">
+      <div class="shot"><span><b>Powder Brows</b>Healed · 6 weeks</span></div>
+      <div class="shot"><span><b>Lip Blush</b>Healed · 6 weeks</span></div>
+      <div class="shot"><span><b>Combo Brows</b>Healed · 6 weeks</span></div>
+      <div class="shot"><span><b>Skin Ritual</b>After 3 sessions</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="portrait reveal"></div>
+    <div class="reveal"><span class="eyebrow">Meet Aamy</span><h2 class="h2">Hi, I'm Aamy. <em>Welcome in.</em></h2><p class="lead">I'm a certified PMU artist and skin lover based in Huizen. I started FaceRituals because I know how it feels to juggle a full-time job and still want to feel put-together. My studio is calm, personal and hygienic, and every treatment is unhurried: just you, a cup of tea and a result you will love waking up to.</p><div class="sig">Aamy</div><div class="creds"><span class="chip">PMU certified</span><span class="chip">GGD registered studio</span><span class="chip">Sterile single-use needles</span></div></div>
+  </div>
+</section>
+
+<section id="hours" class="hours-bg">
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">Opening Hours</span><h2 class="h2">Before work, after work, <em>weekends</em></h2></div>
+    <div class="hours-grid">
+      <div class="hours-card glass reveal"><h3>Studio hours</h3>
+        <div class="row"><b>Monday to Friday</b><span>07:00 to 09:00</span></div>
+        <div class="row"><b></b><span>17:00 to 21:00</span></div>
+        <div class="row"><b>Saturday</b><span>By appointment</span></div>
+        <div class="row"><b>Sunday</b><span>By appointment</span></div>
+      </div>
+      <div class="hours-card glass hl reveal" id="book"><h3>Ready for your ritual?</h3><p>See live availability and reserve your spot in under a minute. PMU bookings hold with a small deposit. Free cancellation up to 24 hours before.</p><a href="#" class="btn">Book now via Salonized &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">Kind Words</span><h2 class="h2">What clients <em>say</em></h2><p class="lead">Reviews coming soon. These are placeholders.</p></div>
+    <div class="reviews">
+      <div class="review glass reveal"><div class="stars">★★★★★</div><p>"My brows look like mine, only better. Nobody can tell, everybody compliments."</p><small>Client name · Huizen</small></div>
+      <div class="review glass reveal"><div class="stars">★★★★★</div><p>"A 7am appointment before work? Game changer. So calm and so clean."</p><small>Client name · Blaricum</small></div>
+      <div class="review glass reveal"><div class="stars">★★★★★</div><p>"The lip blush healed so soft. I've stopped carrying lipstick."</p><small>Client name · Laren</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="hours-bg">
+  <div class="wrap">
+    <div class="center reveal"><span class="eyebrow">FAQ</span><h2 class="h2">Good to <em>know</em></h2></div>
+    <div class="faq">
+      <details class="glass reveal" open><summary>Does permanent makeup hurt?</summary><p>Most clients describe it as mild scratching. A topical numbing cream is applied before and during treatment for comfort.</p></details>
+      <details class="glass reveal"><summary>How long do results last?</summary><p>Brows usually last 1 to 3 years and lip blush 2 to 3 years, depending on skin type, lifestyle and sun exposure. A yearly colour refresh keeps them fresh.</p></details>
+      <details class="glass reveal"><summary>Why is a touch-up included?</summary><p>Skin heals differently for everyone. The touch-up at around 6 weeks perfects shape and colour so your healed result is just right.</p></details>
+      <details class="glass reveal"><summary>Who is not suitable for PMU?</summary><p>PMU is not done during pregnancy or breastfeeding, or with certain medical conditions or medications. We go through everything during your free consult.</p></details>
+      <details class="glass reveal"><summary>How do deposits and cancellations work?</summary><p>PMU appointments are secured with a deposit that goes toward your treatment. Cancel or reschedule free of charge up to 24 hours before.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact-bg">
+  <div class="blob b1" style="opacity:.5"></div>
+  <div class="wrap">
+    <div class="contact glass reveal">
+      <div><span class="eyebrow">Visit the Studio</span><h2 class="h2">Find us in <em>Huizen</em></h2><p class="lead">A private home studio in Huizen, Het Gooi. The exact address is shared after booking. Easy free parking.</p>
+        <ul><li><b>Location</b>Huizen, Noord-Holland</li><li><b>Email</b>hello@facerituals.nl (placeholder)</li><li><b>Instagram</b>@facerituals.by.aamy</li><li><b>Serving</b>Huizen, Blaricum, Laren, Bussum</li></ul>
+        <a href="#book" class="btn btn-primary">Book now &rarr;</a></div>
+      <div class="map"><span>📍 Huizen, Het Gooi</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot"><div><a href="#" class="logo">FaceRituals <span>by Aamy</span></a><p style="margin-top:8px">Natural PMU &amp; skin rituals in Huizen.</p></div>
+      <div class="foot-links"><a href="#services">Treatments</a><a href="#hours">Hours</a><a href="#faq">FAQ</a><a href="#">Instagram</a></div></div>
+    <div class="copy"><span>© 2026 FaceRituals by Aamy · KvK placeholder</span><span>EN · <a href="#">NL</a></span></div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
